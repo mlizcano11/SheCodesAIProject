@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles.css"> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css"/> 
     <title>SheCodes AI Project</title>
 </head>
 <body>
+    <div class="container">
 <header>
-<h1> <div class="welcome">Welcome to my SheCodes AI Haiku Generator </div></h1>
+<h1 class="welcome">Welcome to my SheCodes AI Haiku Generator</h1>
+
 </header>
 
 <main>
-    <div class="form-container"> 
-    <form>
+    <div class="form-container">
+    <form id="poem-generator-form">
         <input 
         type="text" 
-        placeholder="Enter topic"
+        placeholder="Enter topic for a Haiku poem"
         autofocus
         required
         autocomplete="off"
@@ -25,23 +29,18 @@
         />
         <input type="submit" class="submit-button"/>
     </form>
-    <div class="hint">i.e: Cats, Trees or Sushi
-
-<div class="poem" id="poem"> <p>
-    "The earth shakes <br> just enough <br> to remind us."
-    </p></div>
-<br>
-<div>
+    <div class="hint">i.e: Cats, Trees or Sushi</div>
 </div>
-</div>
-</div>
+<div class="poem-hidden" id="poem"></div>
 </main>
     
-    <footer>
+
+<footer>
     This <a href="https://www.shecodes.io/" target="_blank" > SheCodes AI</a> project coded by <a href="https://github.com/mlizcano11?tab=repositories" target="_blank">Melinda Lizcano</a> 
         <br>
     Available on <a href="https://github.com/mlizcano11/SheCodesAIProject" target="_blank">GitHub</a>
 </footer>
+</div>
 
 <script src="src/index.js"></script>
 </body>
