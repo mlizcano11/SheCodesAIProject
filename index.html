@@ -6,18 +6,44 @@
     <link rel="stylesheet" href="src/styles.css"> 
     <title>SheCodes AI Project</title>
 </head>
-
-<h1> 
-    <div class="welcome">Welcome to my SheCodes AI Password Generator </div>
-</h1>
-
 <body>
+<header>
+<h1> <div class="welcome">Welcome to my SheCodes AI Haiku Generator </div></h1>
+</header>
+
+<main>
+    <div class="form-container"> 
+    <form>
+        <input 
+        type="text" 
+        placeholder="Enter topic"
+        autofocus
+        required
+        autocomplete="off"
+        class="instructions"
+        id="user-instructions"
+        />
+        <input type="submit" class="submit-button"/>
+    </form>
+    <div class="hint">i.e: Cats, Trees or Sushi</div>
+</div>
+<div class="poem hidden" id="poem"></div>
+
+
+<br>
+<div>
+    <p>
+    "The earth shakes <br> just enough <br> to remind us."
+    </p>
+</div>
+</main>
     
     <footer>
-    <a href="https://www.shecodes.io/" AI Project> SheCodes AI</a> project coded by <a href="https://github.com/mlizcano11?tab=repositories">Melinda Lizcano</a> 
+    This <a href="https://www.shecodes.io/" AI Project> SheCodes AI</a> project coded by <a href="https://github.com/mlizcano11?tab=repositories">Melinda Lizcano</a> 
         <br>
     Available on <a href="https://github.com/mlizcano11/SheCodesAIProject">GitHub</a>
 </footer>
-</body>
+
 <script src="src/index.js"></script>
+</body>
 </html>
